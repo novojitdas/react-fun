@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: black;
+}
+
+.custom-wh {
+  height: 500px;
+  width: 300px;
+}
+
+@layer components {
+  .container {
+    @apply min-h-screen flex flex-col justify-center items-center bg-black;
+  }
+
+  .remote {
+    @apply flex flex-col items-center custom-wh bg-white border border-4 border-indigo-800;
+  }
+
+  .screen {
+    @apply flex flex-col justify-center h-48 w-60 m-4 text-center text-3xl bg-blue-500;
+  }
+
+  .btnred {
+    @apply bg-red-500 p-2 rounded-full text-white text-lg hover:bg-red-400;
+  }
+
+  .btn1 {
+    @apply p-2 text-black text-lg border border-solid border-black rounded-full hover:bg-slate-300;
+  }
+
+  .btn2 {
+    @apply ml-4 mt-4 px-3 py-2 text-black text-lg border border-solid border-black rounded-full hover:bg-slate-300;
+  }
+
+  .logo {
+    @apply w-48;
+  }
+}
